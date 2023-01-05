@@ -1,0 +1,601 @@
+{
+    "resourceType": "Bundle",
+    "meta": {
+        "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLBundleProfile"]
+    },
+    "identifier": {
+        "use": "official",
+        "system": "https://ict.moph.go.th/MCDL",
+        "value": "MCDL:01:001377700:20221220:0000001",
+        "period": {
+            "start": "2022-12-20",
+            "end": "2023-01-20"
+        }
+    },
+    "type": "document",
+    "timestamp": "2022-12-20T13:08:17+07:00",
+    "entry": [
+        {
+            "fullUrl": "Composition/1",
+            "resource": {
+                "resourceType": "Composition",
+                "id": "1",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLCompositionProfile"]
+                },
+                "identifier": {
+                    "use": "official",
+                    "system": "https://oid.teda.th/",
+                    "value": "2.16.764.1.4.100.31.1"
+                },
+                "status": "final",
+                "type": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "34117-2",
+                            "display": "History and physical note"
+                        }
+                    ]
+                },
+                "subject": {"reference": "Patient/3"},
+                "encounter": {"reference": "Encounter/8"},
+                "date": "2022-12-20T13:28:17+07:00",
+                "author": [
+                    {
+                        "reference": "Patient/3",
+                        "type": "Patient"
+                    },
+                    {
+                        "reference": "Practitioner/6",
+                        "type": "Practitioner"
+                    }
+                ],
+                "title": "Medical Certificate For Driving License",
+                "attester": [
+                    {
+                        "mode": "personal",
+                        "party": {
+                            "reference": "Patient/3",
+                            "type": "Patient"
+                        }
+                    },
+                    {
+                        "mode": "professional",
+                        "party": {
+                            "reference": "Practitioner/6",
+                            "type": "Practitioner"
+                        }
+                    }
+                ],
+                "custodian": {"reference": "Organization/2"},
+                "section": [
+                    {
+                        "title": "ส่วนที่ 1 ของผู้ขอใบรับรองสุขภาพ",
+                        "author": [
+                            {
+                                "reference": "Patient/3",
+                                "type": "Patient"
+                            }
+                        ],
+                        "focus": {"reference": "QuestionnaireResponse/4"},
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">นาย แลลลี่ สมิธ, เลขประจำตัวประชาชน 0123456789012,โรคประจำตัว มี เป็นโรคไทรอยด์เป็นพิษ,อุบัติเหตุและผ่าตัด ไม่มี,เคยเข้ารับการรักษาในโรงพยาบาล ไม่มี, โรคลมชัก ไม่มี, ประวัติอื่นที่สำคัญ ไม่มี</div>"
+                        },
+                        "entry": [
+                            {
+                                "reference": "QuestionnaireResponse/4",
+                                "type": "QuestionnaireResponse"
+                            },
+                            {
+                                "reference": "Provenance/5",
+                                "type": "Provenance"
+                            }
+                        ]
+                    },
+                    {
+                        "title": "ส่วนที่ 2 ของแพทย์",
+                        "author": [
+                            {
+                                "reference": "Practitioner/6",
+                                "type": "Practitioner"
+                            }
+                        ],
+                        "focus": {"reference": "Condition/7"},
+                        "text": {
+                            "status": "generated",
+                            "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">นายแพทย์ อลัน เนลสัน, เลขใบอนุญาตประกอบวิชาชีพเวชกรรม 12345, คลินิกตรวจสุขภาพ,วันที่ 7 กุมภาพันธ์ 2564,ผู้มารับการตรวจมีสุขภาพแข็งแรงสมบูรณ์ </div>"
+                        },
+                        "entry": [
+                            {
+                                "reference": "Condition/7",
+                                "type": "Condition"
+                            },
+                            {
+                                "reference": "Observation/11",
+                                "type": "Observation"
+                            },
+                            {
+                                "reference": "Observation/12",
+                                "type": "Observation"
+                            },
+                            {
+                                "reference": "Provenance/13",
+                                "type": "Provenance"
+                            }
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Organization/2",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "2",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLOrganization1Profile"]
+                },
+                "identifier": [
+                    {
+                        "system": "https://bps.moph.go.th",
+                        "value": "004112400"
+                    }
+                ],
+                "name": "ศูนย์เทคโนโลยีสารสนเทศ สำนักงานปลัดกระทรวงสาธารณสุข"
+            }
+        },
+        {
+            "fullUrl": "Patient/3",
+            "resource": {
+                "resourceType": "Patient",
+                "id": "3",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLPatientProfile"]
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                    "code": "NI",
+                                    "display": "National unique individual identifier"
+                                }
+                            ]
+                        },
+                        "system": "https://www.dopa.go.th",
+                        "value": "0123456789012"
+                    }
+                ],
+                "name": [
+                    {
+                        "text": "นาย แลลลี่ สมิธ",
+                        "family": "สมิธ",
+                        "given": ["แลลลี่"],
+                        "prefix": ["นาย"]
+                    }
+                ],
+                "address": [
+                    {
+                        "text": "เลขที่ 1 แขวงดุสิต เขตดุสิต กรุงเทพมหานคร 10300 ประเทศไทย",
+                        "line": ["เลขที่ 1"],
+                        "city": "100201",
+                        "district": "1002",
+                        "state": "10",
+                        "postalCode": "10300",
+                        "country": "TH"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "QuestionnaireResponse/4",
+            "resource": {
+                "resourceType": "QuestionnaireResponse",
+                "id": "4",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLQuestionnaireResponseProfile"]
+                },
+                "status": "completed",
+                "subject": {"reference": "Patient/3"},
+                "authored": "2022-12-20",
+                "source": {"reference": "Patient/3"},
+                "item": [
+                    {
+                        "linkId": "1",
+                        "text": "โรคประจำตัว",
+                        "answer": [
+                            {"valueBoolean": true},
+                            {"valueString": "เป็นโรคไทรอยด์เป็นพิษ"}
+                        ]
+                    },
+                    {
+                        "linkId": "2",
+                        "text": "อุบัติเหตุและผ่าตัด",
+                        "answer": [
+                            {"valueBoolean": false},
+                            {"valueString": "-"}
+                        ]
+                    },
+                    {
+                        "linkId": "3",
+                        "text": "เคยเข้ารับการรักษาในโรงพยาบาล",
+                        "answer": [
+                            {"valueBoolean": false},
+                            {"valueString": "-"}
+                        ]
+                    },
+                    {
+                        "linkId": "4",
+                        "text": "โรคลมชัก",
+                        "answer": [
+                            {"valueBoolean": false},
+                            {"valueString": "-"}
+                        ]
+                    },
+                    {
+                        "linkId": "5",
+                        "text": "ประวัติอื่นที่สำคัญ",
+                        "answer": [
+                            {"valueBoolean": false},
+                            {"valueString": "-"}
+                        ]
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Provenance/5",
+            "resource": {
+                "resourceType": "Provenance",
+                "id": "5",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLProvenancePatientProfile"]
+                },
+                "target": [
+                    {
+                        "reference": "Patient/3",
+                        "type": "Patient"
+                    },
+                    {
+                        "reference": "QuestionnaireResponse/4",
+                        "type": "QuestionnaireResponse"
+                    }
+                ],
+                "recorded": "2022-12-20T13:28:17+07:00",
+                "agent": [
+                    {
+                        "type": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/provenance-participant-type",
+                                    "code": "author",
+                                    "display": "Author"
+                                }
+                            ]
+                        },
+                        "who": {"reference": "Patient/3"}
+                    }
+                ],
+                "signature": [
+                    {
+                        "type": [
+                            {
+                                "system": "urn:iso-astm:E1762-95:2013",
+                                "code": "1.2.840.10065.1.12.1.1",
+                                "display": "Author's Signature"
+                            }
+                        ],
+                        "when": "2022-12-20T13:28:17+07:00",
+                        "who": {"reference": "Patient/3"},
+                        "targetFormat": "json",
+                        "sigFormat": "text/plain",
+                        "data": "4LiZ4Liy4LiiIOC5geC4peC4peC4peC4teC5iCDguKrguKHguLTguJg7MjAyMS0wMi0wN1QxMzoyODoxNyswNzowMA=="
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Practitioner/6",
+            "resource": {
+                "resourceType": "Practitioner",
+                "id": "6",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLPractitionerProfile"]
+                },
+                "name": [
+                    {
+                        "text": "นายแพทย์ สมชาย รักดี",
+                        "family": "รักดี",
+                        "given": ["สมชาย"],
+                        "prefix": ["นายแพทย์"]
+                    }
+                ],
+                "qualification": [
+                    {
+                        "identifier": [
+                            {
+                                "use": "official",
+                                "type": {
+                                    "coding": [
+                                        {
+                                            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+                                            "code": "MD",
+                                            "display": "Medical License number"
+                                        }
+                                    ]
+                                },
+                                "system": "https://www.tmc.or.th/",
+                                "value": "12345"
+                            }
+                        ],
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://terminology.hl7.org/CodeSystem/v2-0360",
+                                    "code": "MD",
+                                    "display": "Doctor of Medicine"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Condition/7",
+            "resource": {
+                "resourceType": "Condition",
+                "id": "7",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLConditionProfile"]
+                },
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://snomed.info/sct",
+                            "code": "102499006",
+                            "display": "Fit and well"
+                        }
+                    ]
+                },
+                "subject": {"reference": "Patient/3"},
+                "encounter": {"reference": "Encounter/8"},
+                "onsetDateTime": "2022-12-20T13:28:17+07:00",
+                "note": [
+                    {"text": "สุขภาพร่างกายแข็งแรง สมบูรณ์ดี ไม่ขัดต่อการขับขี่ยานพาหนะ"}
+                ]
+            }
+        },
+        {
+            "fullUrl": "Encounter/8",
+            "resource": {
+                "resourceType": "Encounter",
+                "id": "8",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLEncounterProfile"]
+                },
+                "status": "finished",
+                "class": {
+                    "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+                    "code": "AMB",
+                    "display": "ambulatory"
+                },
+                "subject": {"reference": "Patient/3"},
+                "participant": [
+                    {
+                        "individual": {"reference": "Practitioner/6"}
+                    }
+                ],
+                "period": {
+                    "start": "2022-12-20T13:08:17+07:00",
+                    "end": "2022-12-20T13:28:17+07:00"
+                },
+                "location": [
+                    {
+                        "location": {"reference": "Location/9"}
+                    }
+                ],
+                "serviceProvider": {"reference": "Organization/10"}
+            }
+        },
+        {
+            "fullUrl": "Location/9",
+            "resource": {
+                "resourceType": "Location",
+                "id": "9",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLLocationProfile"]
+                },
+                "name": "โรงพยาบาลทดสอบ สพธอ",
+                "managingOrganization": {"reference": "Organization/10"}
+            }
+        },
+        {
+            "fullUrl": "Organization/10",
+            "resource": {
+                "resourceType": "Organization",
+                "id": "10",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLOrganization2Profile"]
+                },
+                "identifier": [
+                    {
+                        "use": "official",
+                        "system": "https://bps.moph.go.th",
+                        "value": "001377700"
+                    }
+                ],
+                "name": "โรงพยาบาลทดสอบ สพธอ",
+                "address": [
+                    {
+                        "text": "เลขที่ 2 แขวงดุสิต เขตดุสิต กรุงเทพมหานคร 10300 ประเทศไทย",
+                        "line": ["เลขที่ 2"],
+                        "city": "100201",
+                        "district": "1002",
+                        "state": "10",
+                        "postalCode": "10300",
+                        "country": "TH"
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Observation/11",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "11",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLObservationVitalSignsProfile"]
+                },
+                "status": "final",
+                "category": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+                                "code": "vital-signs"
+                            }
+                        ]
+                    }
+                ],
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "85353-1"
+                        }
+                    ]
+                },
+                "subject": {"reference": "Patient/3"},
+                "encounter": {"reference": "Encounter/8"},
+                "effectiveDateTime": "2022-12-20T13:08:17+07:00",
+                "component": [
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "29463-7",
+                                    "display": "Body weight"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 50,
+                            "unit": "kg",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "kg"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8302-2",
+                                    "display": "Body height"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 160,
+                            "unit": "cm",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "cm"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8480-6",
+                                    "display": "Systolic blood pressure"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 120,
+                            "unit": "mmHg",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8462-4",
+                                    "display": "Diastolic blood pressure"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 80,
+                            "unit": "mmHg",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "mm[Hg]"
+                        }
+                    },
+                    {
+                        "code": {
+                            "coding": [
+                                {
+                                    "system": "http://loinc.org",
+                                    "code": "8867-4",
+                                    "display": "Heart rate"
+                                }
+                            ]
+                        },
+                        "valueQuantity": {
+                            "value": 80,
+                            "unit": "per minute",
+                            "system": "http://unitsofmeasure.org",
+                            "code": "/min"
+                        }
+                    }
+                ]
+            }
+        },
+        {
+            "fullUrl": "Observation/12",
+            "resource": {
+                "resourceType": "Observation",
+                "id": "12",
+                "meta": {
+                    "profile": ["https://schemas.teda.th/teda/teda-affiliate/the-medical-council-of-thailand/medical-certificate-for-driving-license/-/raw/main/StructureDefinition/MCDLObservationGeneralAppearanceProfile"]
+                },
+                "status": "final",
+                "code": {
+                    "coding": [
+                        {
+                            "system": "http://loinc.org",
+                            "code": "32434-3",
+                            "display": "General appearance"
+                        }
+                    ]
+                },
+                "subject": {"reference": "Patient/3"},
+                "encounter": {"reference": "Encounter/8"},
+                "valueString": "-",
+                "interpretation": [
+                    {
+                        "coding": [
+                            {
+                                "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+                                "code": "N",
+                                "display": "Normal"
+                            }
+                        ]
+                    }
+                ],
+                "note": [
+                    {"text": "-"}
+                ]
+            }
+        }]}
